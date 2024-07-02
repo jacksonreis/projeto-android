@@ -45,16 +45,24 @@
 
 }
 
+body {
+    background-color: #f1f1f1;
+}
+
 main {
+    background-color: #f8f8f8;
     max-width: 850px;
     margin: auto;
-    padding: 14px;
+    padding: 16px;
+    border: 1px solid rgb(221, 221, 221);
 }
 
 header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
     height: 220px;
     background-color: rgb(224, 224, 224);
-    margin-bottom: 30px;
+    margin-bottom: 0px;
+    color: white;
 }
 
 #container-header {
@@ -77,21 +85,44 @@ header h1 {
     font-size: max(37px, 2.7vw);
     font-family: var(--fonte-title1);
     margin-bottom: 20px;
+    text-shadow: black ;
 }
 
 nav {
     margin-left: 14px;
 }
 
-h2 {
-    margin: 16px 0px;
+h1, h2 {
+    font-family: var(--font-android);
+    font-weight: lighter;
 }
 
-p {
+main h1 {
+    color: var(--cor5);
+    font-size: 25px;
+    padding-top: 20px;
+    margin-bottom: 23px;
+}
+
+h2 {
+    margin: 20px 0px;
+    font-size: 20px;
+}
+
+p, a {
     font-family: var(--fonte-padrao);
 }
 
 main p {
     text-align: justify;
     margin: 10px 0px;
+    text-indent: 20px;
+}
+
+ul {
+    padding-left: 40px;
+}
+
+aside p {
+    text-indent: 0px;
 }
