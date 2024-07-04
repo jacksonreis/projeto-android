@@ -81,15 +81,36 @@ header h1,p {
     text-align: center;
 }
 
+header p {
+    text-shadow: 1.5px 1.5px 0.5px #171717a8;
+}
+
 header h1 {
     font-size: max(37px, 2.7vw);
     font-family: var(--fonte-title1);
     margin-bottom: 20px;
-    text-shadow: black ;
+    text-shadow: 2px 2px 1px #17171791;
 }
 
 nav {
-    margin-left: 14px;
+    margin-left: 0px;
+  
+}
+
+nav a {
+
+    color: white; 
+    font-weight: bold;
+    text-decoration: none;
+    padding: 7px 10px;
+    margin-right: -4px;
+    font-size: 14px;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background-color: #1a5c37;
+    transition: 0.2s;
 }
 
 h1, h2 {
@@ -105,11 +126,24 @@ main h1 {
 }
 
 h2 {
+    color: var(--cor4);
     margin: 20px 0px;
     font-size: 20px;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    padding-left: 8px;
 }
 
-p, a {
+h3 {
+    color: white;
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor3);
+    border-radius: 8px 8px 0px 0px;
+    margin:-10px -15px 15px -15px;
+    padding: 7px 0px 7px 10px;
+    font-weight: 400;
+}
+
+p, a, li {
     font-family: var(--fonte-padrao);
 }
 
@@ -117,10 +151,71 @@ main p {
     text-align: justify;
     margin: 10px 0px;
     text-indent: 20px;
+    line-height: 1.6em;
+}
+
+strong {
+    color: var(--cor5
+    );
+}
+
+p a {
+    color: var(--cor5
+    );
+    background-color: var(--cor1);
+    padding: 0px 4px;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+p a::after {
+    content: " 🔗";
+}
+
+img {
+    width: 100%;
+    margin: auto;
+}
+
+#img-bugdroid {
+    max-width: 300px;
+    min-width: 200px;
+    margin: auto;
+    display: block;
+}
+
+#container-video {
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+    background-color: blue;
+    
+    padding: 3px;
+    padding-bottom: 50%;
+}
+
+#container-video iframe {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    
 }
 
 ul {
     padding-left: 40px;
+}
+
+aside {
+    background-color: #EDF9F3;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid var(--cor3);
 }
 
 aside p {
