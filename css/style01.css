@@ -59,9 +59,8 @@ main {
 
 header {
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
-    height: 220px;
+    min-height: 220px;
     background-color: rgb(224, 224, 224);
-    margin-bottom: 0px;
     color: white;
 }
 
@@ -72,8 +71,7 @@ header {
 }
 
 #container-text {
-
-    height: 120px;
+    min-height: 120px;
     margin-bottom: 25px;
 }
 
@@ -83,6 +81,7 @@ header h1,p {
 
 header p {
     text-shadow: 1.5px 1.5px 0.5px #171717a8;
+    padding: 0px 30px;
 }
 
 header h1 {
@@ -90,11 +89,12 @@ header h1 {
     font-family: var(--fonte-title1);
     margin-bottom: 20px;
     text-shadow: 2px 2px 1px #17171791;
+    padding: 0px 10px;
 }
 
 nav {
     margin-left: 0px;
-  
+    max-width: 331px;
 }
 
 nav a {
@@ -154,12 +154,12 @@ main p {
     line-height: 1.6em;
 }
 
-strong {
+main strong {
     color: var(--cor5
     );
 }
 
-p a {
+main p a {
     color: var(--cor5
     );
     background-color: var(--cor1);
@@ -178,24 +178,26 @@ p a::after {
 
 img {
     width: 100%;
-    margin: auto;
+    margin: 22px auto;
 }
 
 #img-bugdroid {
     max-width: 300px;
     min-width: 200px;
-    margin: auto;
+    margin: 22px auto;
     display: block;
 }
 
 #container-video {
     max-width: 600px;
-    margin: auto;
+    min-height: 253px;
+    margin: 30px auto;
     position: relative;
     background-color: blue;
+    border-radius: 10px;
     
-    padding: 3px;
-    padding-bottom: 50%;
+    padding: 30px;
+    padding-bottom: 37%;
 }
 
 #container-video iframe {
@@ -203,12 +205,15 @@ img {
     top: 0%;
     left: 0%;
     width: 100%;
-    height: 100%;
-    
+    height: 100%;   
+    border-radius: 10px;
 }
 
 ul {
-    padding-left: 40px;
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: '\2714\0020\0020';
+    margin: 20px 0px;
 }
 
 aside {
@@ -220,4 +225,16 @@ aside {
 
 aside p {
     text-indent: 0px;
+}
+
+footer {
+    background-color: var(--cor-footer);
+    margin-top: 50px;
+    color: #1a1a1a;
+}
+
+footer p {
+    padding: 50px 0px;
+    font-family: cursive;
+    letter-spacing: -0.4px;
 }
